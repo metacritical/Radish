@@ -1,0 +1,15 @@
+div.container-fluid
+  include ./sidebar.jade
+  div.col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+    h3.page-header Namespaces
+    div.row.placeholders
+      div.panel.panel-info
+        div.panel-heading.text-center(style="color:white;background-color:#5b3777;")
+          p#panel-header List of NameSpaces
+          button(class="btn btn-xs btn-success addkey-right" data-toggle="modal" data-target=".newkey-modal")
+            span.glyphicon.glyphicon-plus
+            |  Add New Key
+          button(class="btn btn-xs btn-success add-collaborator-right hide" data-toggle="modal" data-target=".add-collab-modal")
+            span.glyphicon.glyphicon-plus
+            |  Add Collaborator
+        div.row.badge-group-list

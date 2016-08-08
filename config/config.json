@@ -1,0 +1,21 @@
+{
+    "app": {
+        "port": "3742",
+        "url": "localhost"
+    },
+
+    "redis": {
+        "port": "6379",
+        "url": "localhost"
+    },
+
+    "slave": {
+        "port": "6380",
+        "url": "localhost"
+    },
+
+    "db" : {
+        "name" : "radish.db",
+        "type" : "sqlite3"
+    }
+}

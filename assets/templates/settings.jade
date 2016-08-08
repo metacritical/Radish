@@ -1,0 +1,44 @@
+.col-xs-7
+  form.form-horizontal
+    fieldset
+      .form-group
+        label.control-label.col-xs-2(for='username') Username
+        .col-xs-10
+          input#userName.form-control(
+            type='username', placeholder='username', value='#{username}'
+          )
+      .form-group
+        label.control-label.col-xs-2(for='inputEmail') Email
+        .col-xs-10
+          input#userEmail.form-control(
+            type='email', placeholder='Email', value='#{email}'
+          )
+      .form-group
+        label.control-label.col-xs-2(for='inputPassword') Password
+        .col-xs-10
+          input#userPass.form-control(type='password')
+      .form-group
+        label.control-label.col-xs-2(for='inputPassword') Confirm Password
+        .col-xs-10
+          input#confirmPass.form-control(type='password')
+      .form-group
+        .col-xs-offset-10
+          button.btn.btn-default(id="update-user-settings") Update
+      .alert.alert-danger.col-xs-7.hide
+        p Passwords dont match.
+.col-xs-3
+  img.img-circle(src="/avatar.jpg", style="width:100px;height:100px;margin-top:10px;")
+  .input-group-btn
+    button.btn.btn-danger.fileinput-remove.fileinput-remove-button(title='Clear selected files', type='button')
+      i.glyphicon.glyphicon-trash
+      |  Delete
+    button.hide.btn.btn-default.fileinput-cancel.fileinput-cancel-button(title='Abort ongoing upload', type='button')
+      i.glyphicon.glyphicon-ban-circle
+      |  Cancel
+    button.btn.btn-info.fileinput-upload-button(title='Upload selected files', type='submit')
+      i.glyphicon.glyphicon-upload
+      |  Upload
+    .btn.btn-success.btn-file
+      i.glyphicon.glyphicon-picture
+      |  Pick Image
+      input#pick-image-button(type='file', accept='image/*')

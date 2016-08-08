@@ -1,0 +1,15 @@
+.input-group.file-upload-group
+  .form-control(tabindex='-1')
+    span.file-caption-ellipsis(title='') …
+    .file-caption-name(title='')
+  .input-group-btn
+    button.btn.btn-default.fileinput-remove-button.hide(type='button')
+      i.glyphicon.glyphicon-trash
+      |  Remove
+    button.btn.btn-default.fileinput-upload-button.hide(type='submit')
+      i.glyphicon.glyphicon-upload
+      |  Upload
+    .btn.btn-danger.btn-file
+      i.glyphicon.glyphicon-folder-open
+      |        Browse …
+      input#input-file.file(type='file', name="redisJSONConfig")
